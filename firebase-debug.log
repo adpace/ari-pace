@@ -1,0 +1,25 @@
+[debug] [2019-08-08T20:28:15.735Z] ----------------------------------------------------------------------
+[debug] [2019-08-08T20:28:15.737Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\adpac\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-08-08T20:28:15.737Z] CLI Version:   7.2.2
+[debug] [2019-08-08T20:28:15.737Z] Platform:      win32
+[debug] [2019-08-08T20:28:15.737Z] Node Version:  v11.11.0
+[debug] [2019-08-08T20:28:15.738Z] Time:          Thu Aug 08 2019 13:28:15 GMT-0700 (Mountain Standard Time)
+[debug] [2019-08-08T20:28:15.738Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-08T20:28:15.744Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-08T20:28:15.744Z] > authorizing via signed-in user
+[debug] [2019-08-08T20:28:15.744Z] [iam] checking project aripace-39fe6 for permissions ["firebase.projects.get"]
+[debug] [2019-08-08T20:28:15.746Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/aripace-39fe6:testIamPermissions  
+
+[debug] [2019-08-08T20:28:16.127Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-08T20:28:16.131Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/aripace-39fe6  
+ 
+[debug] [2019-08-08T20:28:16.453Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\sites\ari-pace'...
+[info] 
+[debug] [2019-08-08T20:28:16.461Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/aripace-39fe6/webApps/-/config  
+ 
+[debug] [2019-08-08T20:28:16.713Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: dist
+[info] +  hosting: Local server: http://localhost:5000

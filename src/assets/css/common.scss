@@ -1,0 +1,170 @@
+//
+//    Created by Ari Pace.
+//    This file holds CSS that applies across all components of the site.
+//    All global CSS should be placed in here.
+//    Any CSS that is used only for the component only should be placed
+//    in a style tag with the "scoped" attribute inside that component.
+//
+@import '_vars.scss';
+
+.page-title {
+  font-size: $font-xl;
+}
+
+body {
+  font-family: Helvetica, 'Avenir', Arial, sans-serif;
+  color: $gray;
+}
+
+a {
+  color: $gray;
+
+  &:hover {
+    color: $gray;
+    text-decoration: none;
+  }
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+  transform-origin: left;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.grow-center {
+  transition: all .2s ease-in-out;
+  transform-origin: center;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.title {
+  position: relative;
+  z-index: 1;
+  font-size: 28px;
+}
+
+.sub-title {
+  font-size: 10px;
+  font-style: italic;
+  letter-spacing: 3px;
+  font-weight: 400;
+  position: relative;
+  z-index: 1;
+}
+
+.bg {
+  background-position: center;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-attachment: fixed;
+  overflow-x: auto;
+}
+
+.text-blue {
+  color: $blue;
+}
+
+.text-pink {
+  color: $pink;
+}
+
+.text-lime {
+  color: $lime;
+}
+
+@media all and (max-width: 576px) {
+
+  .title {
+    font-size: 18px;
+    transform: translateY(22px);
+  }
+
+  .lime-bar-diag img {
+    width: 150px;
+    height: auto;
+  }
+
+  .sub-title {
+    transform: translateY(-14px);
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media all and (min-width: 577px) and (max-width: 767px) {
+
+  .title {
+    font-size: 22px;
+    transform: translateY(26px);
+  }
+
+  .lime-bar-diag img {
+    width: 250px;
+    height: auto;
+  }
+
+  .sub-title {
+    transform: translateY(-12px);
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+
+  .title {
+    font-size: 24px;
+    transform: translateY(28px);
+  }
+
+  .lime-bar-diag img {
+    width: 240px;
+    height: auto;
+  }
+
+  .sub-title {
+    transform: translateY(-10px);
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  .title {
+    font-size: 26px;
+    transform: translateY(32px);
+  }
+
+  .lime-bar-diag img {
+    width: 260px;
+    height: auto;
+  }
+
+  .sub-title {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+@media all and (min-width: 1200px) {
+
+  .content-wrapper {
+    height: 90% !important;
+  }
+
+  .title {
+    transform: translateY(32px);
+  }
+
+  .lime-bar-diag img {
+    width: 280px;
+    height: auto;
+  }
+
+  .sub-title {
+    transform: translateY(-10px);
+  }
+}
