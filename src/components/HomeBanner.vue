@@ -1,11 +1,7 @@
 <template>
 
     <div class="mountain">
-
-        <!--<div id="nav">
-            <router-link to="/">Home</router-link> |
-            <router-link to="/about">About</router-link>
-        </div>-->
+        <div class="btn btn-orange">Test Button</div>
     </div>
     <!--<div class="hello">
       <h1>{{ msg }}</h1>
@@ -49,14 +45,14 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  .mountain {
-    background-image: url("../assets/bg-clouds.jpg");
-    background-repeat: no-repeat;
-    /*background-attachment: fixed;*/
-    background-position: center;
-    height: 1168px;
-    /*width: 100%;*/
-  }
+    .mountain {
+        background-image: url("../assets/bg-clouds.jpg");
+        background-repeat: no-repeat;
+        /*background-attachment: fixed;*/
+        background-position: center;
+        height: 1168px;
+        /*width: 100%;*/
+    }
 
     h3 {
         margin: 40px 0 0;
