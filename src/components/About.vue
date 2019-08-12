@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
-    <h1>This is an about page</h1>
-  </div>
+    <div class="section">
+        <div class="section-title">About Me</div>
+    </div>
 </template>

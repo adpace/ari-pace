@@ -1,5 +1,7 @@
 <template>
-    <div class="page-title">Portfolio</div>
+    <div class="section">
+        <div class="section-title">My Portfolio</div>
+    </div>
 </template>
 
 <script>

@@ -5,9 +5,13 @@
             <div class="btn-orange">tester</div>
         </parallax>
         <div class="btn-orange">tester</div>
-<!--        <img src="../assets/bg-mtn.jpg" alt="">-->
-        <about></about>
-        <contact></contact>
+        <!--        <img src="../assets/bg-mtn.jpg" alt="">-->
+        <div v-scroll-spy="{offset: 50}">
+            <about></about>
+            <resume></resume>
+            <portfolio></portfolio>
+            <contact></contact>
+        </div>
     </div>
 </template>
 
@@ -15,6 +19,8 @@
     // @ is an alias to /src
     import About from '@/components/About.vue'
     import Contact from '@/components/Contact.vue'
+    import Resume from '@/components/Resume.vue'
+    import Portfolio from '@/components/Portfolio.vue'
     import Parallax from 'vue-parallaxy'
 
     export default {
@@ -22,7 +28,9 @@
         components: {
             Parallax,
             About,
-            Contact
+            Contact,
+            Resume,
+            Portfolio
         }
     }
 </script>

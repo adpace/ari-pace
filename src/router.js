@@ -27,7 +27,7 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (resume.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "resume" */ './views/Resume.vue')
+      component: () => import(/* webpackChunkName: "resume" */ './components/Resume.vue')
     },
     {
       path: '/portfolio',
@@ -35,7 +35,7 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (portfolio.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "portfolio" */ './views/Portfolio.vue')
+      component: () => import(/* webpackChunkName: "portfolio" */ './components/Portfolio.vue')
     }
   ]
 })
