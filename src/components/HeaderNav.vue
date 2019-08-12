@@ -1,5 +1,5 @@
 <template>
-    <div id="nav">
+    <div id="nav" class="fixed-top">
 
 
         <div v-scroll-spy>
@@ -52,7 +52,7 @@
     @import '../assets/css/index.scss';
 
     #nav {
-        position: absolute;
+        /*position: absolute;*/
 
         .link {
             right: 50px;
