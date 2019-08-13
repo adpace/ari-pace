@@ -2,11 +2,11 @@
     <div class="home">
         <parallax :speed-factor="0.2" :direction="'down'">
             <img src="../assets/bg-mtn.jpg" alt="">
-            <div class="btn-orange">tester</div>
+<!--            <div class="btn-orange">tester</div>-->
         </parallax>
-        <div class="btn-orange">tester</div>
+<!--        <div class="btn-orange">tester</div>-->
         <!--        <img src="../assets/bg-mtn.jpg" alt="">-->
-        <div v-scroll-spy="{offset: 50}">
+        <div v-scroll-spy="{offset: 70}">
             <about></about>
             <resume></resume>
             <portfolio></portfolio>
@@ -35,7 +35,8 @@
     }
 </script>
 
-<style>
+<style lang="scss">
+    @import '../assets/css/index.scss';
     .home {
         /*background-image: url("../assets/bg-mtn.jpg");*/
         /*width: 100%;*/
@@ -46,5 +47,10 @@
         position: relative;
     }
 
-
+    /*.active {
+        color: $orange !important;
+        border-left: 1px solid #178ce6;
+        padding-left: 5px;
+        transition: all 0.5s;
+    }*/
 </style>
