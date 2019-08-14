@@ -37,6 +37,7 @@
 
 <style lang="scss">
     @import '../assets/css/index.scss';
+
     .home {
         /*background-image: url("../assets/bg-mtn.jpg");*/
         /*width: 100%;*/
