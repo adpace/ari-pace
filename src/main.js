@@ -6,6 +6,7 @@ import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import Scrollspy from 'vue2-scrollspy';
+import '@fortawesome/fontawesome-pro/css/all.css'
 // use default options
 Vue.use(Scrollspy)
 Vue.use(BootstrapVue)

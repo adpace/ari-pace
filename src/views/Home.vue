@@ -1,12 +1,10 @@
 <template>
     <div class="home">
         <parallax :speed-factor="0.2" :direction="'down'">
-            <img src="../assets/bg-mtn.jpg" alt="">
-<!--            <div class="btn-orange">tester</div>-->
+            <img src="../assets/bg-forest.jpg" alt="">
         </parallax>
-<!--        <div class="btn-orange">tester</div>-->
-        <!--        <img src="../assets/bg-mtn.jpg" alt="">-->
-        <div v-scroll-spy="{offset: 70}">
+        <div v-scroll-spy="{offset: 70, allowNoActive: true}">
+            <home-banner></home-banner>
             <about></about>
             <resume></resume>
             <portfolio></portfolio>
@@ -17,6 +15,7 @@
 
 <script>
     // @ is an alias to /src
+    import HomeBanner from '@/components/HomeBanner.vue'
     import About from '@/components/About.vue'
     import Contact from '@/components/Contact.vue'
     import Resume from '@/components/Resume.vue'
@@ -27,6 +26,7 @@
         name      : 'home',
         components: {
             Parallax,
+            HomeBanner,
             About,
             Contact,
             Resume,

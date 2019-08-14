@@ -1,7 +1,13 @@
 <template>
 
-    <div class="mountain">
-        <div class="btn btn-orange">Test Button</div>
+    <div class="home-banner">
+        <parallax :speed-factor="0.2" :direction="'down'">
+            <img src="../assets/bg-forest.jpg" alt="">
+        </parallax>
+        <div class="welcome-text">
+            <h3>Hello! I'm</h3>
+            <h2>Ari Pace</h2>
+        </div>
     </div>
     <!--<div class="hello">
       <h1>{{ msg }}</h1>
@@ -45,30 +51,32 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-    .mountain {
-        background-image: url("../assets/bg-clouds.jpg");
-        background-repeat: no-repeat;
-        /*background-attachment: fixed;*/
-        background-position: center;
-        height: 1168px;
-        /*width: 100%;*/
+    @import "../assets/css/index";
+
+    .home-banner {
+        position: relative;
     }
 
-    h3 {
-        margin: 40px 0 0;
+    .welcome-text {
+        position: absolute;
+        top: 200px;
+    }
+    .home-banner .welcome-text h2 {
+        margin: 0;
+        padding: 20px 0 35px;
+        font-size: 90px;
+        color: #fff;
+        font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 80px;
     }
 
-    ul {
-        list-style-type: none;
+    .home-banner .welcome-text h3 {
+        margin: 0;
         padding: 0;
+        font-size: 55px;
+        color: #fff;
+        font-weight: 300;
     }
 
-    li {
-        display: inline-block;
-        margin: 0 10px;
-    }
-
-    a {
-        color: #42b983;
-    }
 </style>
