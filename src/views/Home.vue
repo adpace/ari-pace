@@ -6,6 +6,7 @@
             <resume></resume>
             <portfolio></portfolio>
             <contact></contact>
+            <footer></footer>
         </div>
     </div>
 </template>
@@ -17,6 +18,7 @@
     import Contact from '@/components/Contact.vue'
     import Resume from '@/components/Resume.vue'
     import Portfolio from '@/components/Portfolio.vue'
+    import Footer from '@/components/Footer.vue'
 
     export default {
         name      : 'home',
@@ -25,7 +27,8 @@
             About,
             Contact,
             Resume,
-            Portfolio
+            Portfolio,
+            Footer
         }
     }
 </script>

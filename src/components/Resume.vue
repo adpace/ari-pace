@@ -16,10 +16,14 @@
 
                             <h6 class="font-italic font-weight-light">2017 - 2019</h6>
                             <h6 class="font-weight-semi-bold">Principal Software Engineer</h6>
-                            <p>Designed all UI/UX for ecommerce site microchipdirect.com. Architected front end stack. The
-                                stack I used for this project is Vue.JS with Bootstrap 4 / Vue-Bootstrap. We used Vuex for
-                                state management, Axios for async calls and webpack for build automation. I used FontAwesome
-                                Pro for iconography and Greensock for .svg animations (which can be seen in the navigation
+                            <p>Designed all UI/UX for ecommerce site microchipdirect.com. Architected front end stack.
+                                The
+                                stack I used for this project is Vue.JS with Bootstrap 4 / Vue-Bootstrap. We used Vuex
+                                for
+                                state management, Axios for async calls and webpack for build automation. I used
+                                FontAwesome
+                                Pro for iconography and Greensock for .svg animations (which can be seen in the
+                                navigation
                                 menu). I chose git for version control and Azure for our CI/CD.</p>
                         </div>
                     </div>
@@ -45,8 +49,9 @@
                             </div>
 
                             <h6 class="font-italic font-weight-light">2016</h6>
-                            <h6 class="font-weight-semi-bold">Winner of ...</h6>
-                            <p>created the UI for Precog, the winning App that finished 3rd in the state to the group that won worlds in Spain.</p>
+                            <h6 class="font-weight-semi-bold">Winner of JSVillage best web app competition</h6>
+                            <p>created the UI for Neighborhood Intelligence, the winning App that finished 3rd in the state to the group
+                                that won worlds in Spain.</p>
                         </div>
                     </div>
                 </div>
@@ -61,7 +66,6 @@
 
             </div>
         </div>
-
     </div>
 </template>
 
@@ -82,6 +86,6 @@
     }
 
     .section {
-        background-color: lightgray;
+        background-color: #f3f3f3;
     }
 </style>

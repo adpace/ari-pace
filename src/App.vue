@@ -3,16 +3,19 @@
         <header-nav/>
 
         <router-view/>
+        <footer/>
     </div>
 </template>
 
 <script>
     import HeaderNav from '@/components/HeaderNav.vue'
+    import Footer from '@/components/Footer.vue'
 
     export default {
         name      : 'app',
         components: {
-            HeaderNav
+            HeaderNav,
+            Footer
         }
     }
 
