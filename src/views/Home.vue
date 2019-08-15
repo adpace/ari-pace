@@ -6,8 +6,8 @@
             <resume></resume>
             <portfolio></portfolio>
             <contact></contact>
-            <footer></footer>
         </div>
+        <the-footer></the-footer>
     </div>
 </template>
 
@@ -18,7 +18,7 @@
     import Contact from '@/components/Contact.vue'
     import Resume from '@/components/Resume.vue'
     import Portfolio from '@/components/Portfolio.vue'
-    import Footer from '@/components/Footer.vue'
+    import TheFooter from '@/components/TheFooter.vue'
 
     export default {
         name      : 'home',
@@ -28,12 +28,12 @@
             Contact,
             Resume,
             Portfolio,
-            Footer
+            TheFooter
         }
     }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     @import '../assets/css/index.scss';
 
     .home {
