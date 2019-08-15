@@ -1,12 +1,14 @@
 <template>
 
     <div class="home-banner">
-        <parallax :speed-factor="0.2" :direction="'down'">
+        <parallax :speed-factor="0.3" :direction="'down'">
             <img src="../assets/bg-forest.jpg" alt="">
         </parallax>
         <div class="welcome-text">
-            <h3>Hello! I'm</h3>
-            <h2>Ari Pace</h2>
+            <h3 class="text-center">Hello! I'm</h3>
+            <h2 class="text-center">Ari Pace</h2>
+            <h6>WEB DESIGN | DIGITAL MARKETING | UX DESIGN | WEB DEVELOPMENT | GRAPHIC DESIGN</h6>
+            <div class="btn-orange" v-scroll-spy onclick="$scrollTo(2)">let's talk</div>
         </div>
     </div>
     <!--<div class="hello">
@@ -41,10 +43,15 @@
 </template>
 
 <script>
+    import Parallax from 'vue-parallaxy'
+
     export default {
-        name : 'HelloWorld',
+        name : 'HomeBanner',
         props: {
             msg: String
+        },
+        components: {
+            Parallax
         }
     }
 </script>
@@ -59,7 +66,9 @@
 
     .welcome-text {
         position: absolute;
-        top: 200px;
+        top: 30%;
+        left: 0;
+        right: 0;
     }
     .home-banner .welcome-text h2 {
         margin: 0;
@@ -77,6 +86,10 @@
         font-size: 55px;
         color: #fff;
         font-weight: 300;
+    }
+
+    .home-banner .welcome-text h6 {
+        color: white;
     }
 
 </style>

@@ -1,8 +1,5 @@
 <template>
     <div class="home">
-        <parallax :speed-factor="0.2" :direction="'down'">
-            <img src="../assets/bg-forest.jpg" alt="">
-        </parallax>
         <div v-scroll-spy="{offset: 70, allowNoActive: true}">
             <home-banner></home-banner>
             <about></about>
@@ -20,12 +17,10 @@
     import Contact from '@/components/Contact.vue'
     import Resume from '@/components/Resume.vue'
     import Portfolio from '@/components/Portfolio.vue'
-    import Parallax from 'vue-parallaxy'
 
     export default {
         name      : 'home',
         components: {
-            Parallax,
             HomeBanner,
             About,
             Contact,
