@@ -1,13 +1,13 @@
 <template>
     <div class="home">
-        <div v-scroll-spy="{offset: 70, allowNoActive: true}">
-            <home-banner></home-banner>
-            <about></about>
-            <resume></resume>
-            <portfolio></portfolio>
-            <contact></contact>
+        <div >
+            <home-banner id="home"></home-banner>
+            <about id="about"></about>
+            <resume id="resume"></resume>
+            <portfolio id="portfolio"></portfolio>
+            <contact id="contact"></contact>
         </div>
-        <the-footer></the-footer>
+        <the-footer id=""></the-footer>
     </div>
 </template>
 

@@ -3,26 +3,28 @@
          class="fixed-top px-5"
          :class="{'solid-bg': showNavBg}">
         <div class="container">
-            <div class="d-flex justify-content-end align-items-center menu"
-                 v-scroll-spy-active="{selector: 'a.link'}"
-                 v-scroll-spy-link="{selector: 'a.link'}">
+            <scrollactive class="d-flex justify-content-end align-items-center menu"
+                          active-class="active"
+                          :offset="80"
+                          :scroll-offset="20">
                 <div class="mr-auto brand ml-5 pl-5">Ari Pace</div>
                 <div>
-                    <a class="link" to="/">Home</a>
+                    <a class="scrollactive-item link" href="#home">Home</a>
                 </div>
                 <div>
-                    <a class="link" to="/about">About</a>
+                    <a class="scrollactive-item link" href="#about">About</a>
                 </div>
                 <div>
-                    <a class="link" to="/resume">Resume</a>
+                    <a class="scrollactive-item link" href="#resume">Resume</a>
                 </div>
                 <div>
-                    <a class="link" to="/portfolio">Portfolio</a>
+                    <a class="scrollactive-item link" href="#portfolio">Portfolio</a>
                 </div>
                 <div class="pr-5">
-                    <a class="link mr-5" to="/contact">Contact</a>
+                    <a class="scrollactive-item link mr-5" href="#contact">Contact</a>
                 </div>
-            </div>
+            </scrollactive>
+            <!--            </div>-->
         </div>
     </div>
 </template>
@@ -73,12 +75,16 @@
 
             &:hover:not(.active) {
                 color: $orange;
+                text-decoration: none;
             }
         }
     }
 
-    .solid-bg .menu a.link:not(.active){
+    .solid-bg .menu a.link:not(.active) {
         color: black;
+        &:hover {
+            color: $orange;
+        }
     }
 
     .solid-bg .brand {

@@ -142,6 +142,7 @@ a.link.active {
   transition: all .2s ease;
   &:hover {
     color: white;
+    text-decoration: none;
   }
 }
 

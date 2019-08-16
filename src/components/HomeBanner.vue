@@ -8,7 +8,7 @@
             <h3 class="text-center">Hello! I'm</h3>
             <h2 class="text-center">Ari Pace</h2>
             <h6>WEB DESIGN | DIGITAL MARKETING | UX DESIGN | WEB DEVELOPMENT | GRAPHIC DESIGN</h6>
-            <div class="btn-orange mt-3" @click="navStatus">let's talk</div>
+            <div class="btn-orange mt-3"><a id="home-banner-contact" href="#contact">let's talk</a></div>
 <!--            <div class="btn-orange mt-3" v-scroll-spy onclick="$scrollTo(2)">let's talk</div>-->
         </div>
     </div>
@@ -76,6 +76,11 @@
     }
 
     .home-banner .welcome-text h6 {
+        color: white;
+    }
+
+    #home-banner-contact:hover {
+        text-decoration: none;
         color: white;
     }
 
