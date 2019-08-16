@@ -1,14 +1,15 @@
 <template>
 
     <div class="home-banner">
-        <parallax :speed-factor="0.3" :direction="'down'">
-            <img src="../assets/bg-forest.jpg" alt="">
+        <parallax :speed-factor="0.3" :direction="'down'" id="home-banner">
+            <img src="../assets/bg-forest.jpg" alt="" v-waypoint="{ active: true, callback: updateNavClass, options: { threshold: [0.75,0.25] }  }">
         </parallax>
         <div class="welcome-text">
             <h3 class="text-center">Hello! I'm</h3>
             <h2 class="text-center">Ari Pace</h2>
             <h6>WEB DESIGN | DIGITAL MARKETING | UX DESIGN | WEB DEVELOPMENT | GRAPHIC DESIGN</h6>
-            <div class="btn-orange mt-3" v-scroll-spy onclick="$scrollTo(2)">let's talk</div>
+            <div class="btn-orange mt-3" @click="navStatus">let's talk</div>
+<!--            <div class="btn-orange mt-3" v-scroll-spy onclick="$scrollTo(2)">let's talk</div>-->
         </div>
     </div>
    </template>
@@ -23,6 +24,21 @@
         },
         components: {
             Parallax
+        },
+        methods: {
+            updateNavClass ({ going, direction }) {
+                // going: in, out
+                // direction: top, right, bottom, left
+                if (going === this.$waypointMap.GOING_IN) {
+                    this.$store.dispatch('setNavBg', false)
+                    console.log('waypoint going in!')
+                }
+
+                if (direction === this.$waypointMap.DIRECTION_TOP) {
+                    this.$store.dispatch('setNavBg', true)
+                    console.log('waypoint going top!')
+                }
+            }
         }
     }
 </script>
