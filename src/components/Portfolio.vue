@@ -68,8 +68,63 @@
         name    : "Portfolio",
         data () {
             return {
-                images       : [{'name': 'bg-clouds.jpg', 'alt': 'The Dolomites', 'filter': 'nature'},
-                                {'name': 'bg-forest.jpg', 'alt': 'It is a bird', 'filter': 'animals'}],
+                images       : [{
+                    'name'  : 'mountains.jpg',
+                    'alt'   : 'The Dolomites',
+                    'filter': 'nature',
+                    'id'    : 'image1'
+                },
+
+                                {
+                                    'name'  : 'bird.jpg',
+                                    'alt'   : 'It is a bird on a tree!',
+                                    'filter': 'animals',
+                                    'id'    : 'image2'
+                                },
+
+                                {
+                                    'name'  : 'alps.jpg',
+                                    'alt'   : 'I will live here someday',
+                                    'filter': 'nature',
+                                    'id'    : 'image3'
+                                },
+
+                                {
+                                    'name'  : 'bear.jpg',
+                                    'alt'   : 'Friendly bear',
+                                    'filter': 'animals',
+                                    'id'    : 'image4'
+                                },
+
+                                {
+                                    'name'  : 'canyon.jpg',
+                                    'alt'   : 'A worthy hike',
+                                    'filter': 'nature',
+                                    'id'    : 'image5'
+                                },
+
+                                {
+                                    'name'  : 'monumentvalley.jpg',
+                                    'alt'   : 'Monument Valley',
+                                    'filter': 'nature',
+                                    'id'    : 'image6'
+                                },
+
+                                {
+                                    'name'  : 'puppy.jpg',
+                                    'alt'   : 'Puppy with a feather',
+                                    'filter': 'animals',
+                                    'id'    : 'image7'
+                                },
+
+                                {
+                                    'name'  : 'redwoods.jpg',
+                                    'alt'   : 'Foggy evening in the Redwoods',
+                                    'filter': 'nature',
+                                    'id'    : 'image8'
+                                }],
+                /*images       : [{'name': 'bg-clouds.jpg', 'alt': 'The Dolomites', 'filter': 'nature', 'id': 'image1'},
+                                {'name': 'bg-forest.jpg', 'alt': 'It is a bird', 'filter': 'animals', 'id': 'image2'}],*/
                 galleryFilter: 'all',
                 thumbnailDir : 'https://unpkg.com/vue-my-photos@1.0.0/src/assets/'
 
