@@ -7,7 +7,7 @@
                           active-class="active"
                           :offset="80"
                           :scroll-offset="20">
-                <div class="mr-auto brand ml-5 pl-5">Ari Pace</div>
+                <div class="mr-auto brand">Ari Pace</div>
                 <div>
                     <a class="scrollactive-item link" href="#home">Home</a>
                 </div>
@@ -21,7 +21,7 @@
                     <a class="scrollactive-item link" href="#portfolio">Portfolio</a>
                 </div>
                 <div class="pr-5">
-                    <a class="scrollactive-item link mr-5" href="#contact">Contact</a>
+                    <a class="scrollactive-item link" href="#contact">Contact</a>
                 </div>
             </scrollactive>
             <!--            </div>-->
@@ -49,7 +49,9 @@
     @import '../assets/css/index.scss';
 
     #nav {
-
+& a {
+    font-size: 14px;
+}
     }
 
     .header {

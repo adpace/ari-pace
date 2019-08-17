@@ -98,4 +98,10 @@
     .section {
         background-color: #f3f3f3;
     }
+
+    #contact-message {
+        border: 2px solid #a2a2a2;
+        padding: 6px;
+        margin-top: 20px;
+    }
 </style>
