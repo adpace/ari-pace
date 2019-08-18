@@ -1,34 +1,25 @@
 <template>
     <div class="section">
         <div class="section-title">My Portfolio</div>
-        <p><span class="text-orange">All</span> | Web Design | Digital Marketing | UX Design | Web Development | Graphic
-            Design</p>
 
+        <div class="d-flex justify-content-center font-md">
+            <div class="text-uppercase pointer mr-2"
+                 :class="{'text-orange': galleryFilter==='all'}"
+                 @click="updateFilter('all')">all</div>
 
-        <div id="filters">
-            <form>
-                <fieldset>
-                    <legend>Filter</legend>
-                    <span>
-        <input type="radio" id="all"
-               name="filters" checked
-               v-on:click="updateFilter('all')"/>
-        <label for="all">All</label>
-      </span>
-                    <span>
-        <input type="radio" id="animals"
-               name="filters"
-               v-on:click="updateFilter('animals')"/>
-        <label for="animals">Animals</label>
-      </span>
-                    <span>
-        <input type="radio" id="nature"
-               name="filters"
-               v-on:click="updateFilter('nature')"/>
-        <label for="nature">Nature</label>
-      </span>
-                </fieldset>
-            </form>
+            <div class="text-uppercase pointer mx-2"
+                 :class="{'text-orange': galleryFilter==='animals'}"
+                 @click="updateFilter('animals')">web design</div>
+
+            <div class="text-uppercase pointer mx-2"
+                 :class="{'text-orange': galleryFilter==='nature'}"
+                 @click="updateFilter('nature')">digital marketing</div>
+
+            <div class="text-uppercase pointer mx-2">UX Design</div>
+
+            <div class="text-uppercase pointer mx-2">Web Development</div>
+
+            <div class="text-uppercase pointer ml-2">Graphic Design</div>
         </div>
 
         <transition-group name="thumbnailfade" tag="div">
@@ -43,21 +34,15 @@
         <lightbox id="mylightbox"
                   ref="lightbox"
                   :images="images"
-                  :directory="thumbnailDir"
+                  :directory="'../assets/img'"
                   :filter="galleryFilter"
                   :timeoutDuration="5000"
         />
 
-
-        <!--<lightbox id="mylightbox"
-                  ref="lightbox"
-                  :images="images"
-                  :filter="galleryFilter"
-                  :directory="'src/assets'"
-                  :timeoutDuration="5000"
-        ></lightbox>-->
         <div class="freelance">
             <h2>I AM AVAILABLE FOR FREELANCE</h2>
+            <img src="../assets/img/amkor.png" alt="">
+            <img :src="testDir" alt="wrong directory">
             <div class="btn-white">hire me</div>
         </div>
     </div>
@@ -69,12 +54,11 @@
         data () {
             return {
                 images       : [{
-                    'name'  : 'mountains.jpg',
-                    'alt'   : 'The Dolomites',
+                    'name'  : 'pm-pricing-lg.png',
+                    'alt'   : 'Pro Master Pricing Page LG',
                     'filter': 'nature',
                     'id'    : 'image1'
                 },
-
                                 {
                                     'name'  : 'bird.jpg',
                                     'alt'   : 'It is a bird on a tree!',
@@ -126,7 +110,10 @@
                 /*images       : [{'name': 'bg-clouds.jpg', 'alt': 'The Dolomites', 'filter': 'nature', 'id': 'image1'},
                                 {'name': 'bg-forest.jpg', 'alt': 'It is a bird', 'filter': 'animals', 'id': 'image2'}],*/
                 galleryFilter: 'all',
-                thumbnailDir : 'https://unpkg.com/vue-my-photos@1.0.0/src/assets/'
+                thumbnailDir : '/src/assets/',
+                testDir: require('../assets/img/amkor.png')
+                // testDir:  '/src/assets/img/amkor.png'
+                // thumbnailDir : 'https://unpkg.com/vue-my-photos@1.0.0/src/assets/'
 
             }
         },
@@ -167,15 +154,6 @@
         padding: 0 0 30px;
         text-transform: uppercase;
         font-weight: 600;
-    }
-
-    #filters {
-        width: 500px;
-        margin: 30px auto;
-    }
-
-    #filters span {
-        margin: 15px;
     }
 
     img {
