@@ -11,7 +11,7 @@
                             <div class="row">
                                 <div class="col"><h5 class="font-weight-bold">Microchip Technology</h5></div>
                                 <div class="col"><img style="height: 50px; width: 50px; margin-bottom: -30px;"
-                                                      src="../assets/microchip_round_logo.png" alt=""></div>
+                                                      src="../assets/img/microchip_round_logo.png" alt=""></div>
                             </div>
 
                             <h6 class="font-italic font-weight-light">2017 - 2019</h6>
@@ -33,7 +33,7 @@
                             <div class="row">
                                 <div class="col"><h5 class="font-weight-bold">Florida State University</h5></div>
                                 <div class="col"><img style="height: 50px; width: 50px; margin-bottom: -30px;"
-                                                      src="../assets/FSU.png" alt=""></div>
+                                                      src="../assets/img/FSU.png" alt=""></div>
                             </div>
 
                             <h6 class="font-italic font-weight-light">1993 - 1997</h6>
@@ -45,7 +45,7 @@
                             <div class="row">
                                 <div class="col"><h5 class="font-weight-bold">Phoenix Javascript Meetup</h5></div>
                                 <div class="col"><img style="height: 50px; width: 50px; margin-bottom: -30px;"
-                                                      src="../assets/Jkv-t1TZ_400x400.png" alt=""></div>
+                                                      src="../assets/img/Jkv-t1TZ_400x400.png" alt=""></div>
                             </div>
 
                             <h6 class="font-italic font-weight-light">2016</h6>

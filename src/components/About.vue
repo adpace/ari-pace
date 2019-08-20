@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col">
                     <div class="floating-card">
-                        <img src="../assets/me500.jpg" alt="">
+                        <img src="../assets/img/me500.jpg" alt="">
                     </div>
                 </div>
                 <div class="col">

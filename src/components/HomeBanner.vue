@@ -2,7 +2,7 @@
 
     <div class="home-banner">
         <parallax :speed-factor="0.3" :direction="'down'" id="home-banner">
-            <img src="../assets/bg-forest.jpg" alt="" v-waypoint="{ active: true, callback: updateNavClass, options: { threshold: [0.75,0.25] }  }">
+            <img src="../assets/img/bg-forest.jpg" alt="" v-waypoint="{ active: true, callback: updateNavClass, options: { threshold: [0.75,0.25] }  }">
         </parallax>
         <div class="welcome-text">
             <h3 class="text-center">Hello! I'm</h3>
