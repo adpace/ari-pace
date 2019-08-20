@@ -9,20 +9,29 @@
             </div>
 
             <div class="text-uppercase pointer mx-2"
-                 :class="{'text-orange': galleryFilter==='animals'}"
-                 @click="updateFilter('animals')">web design
+                 :class="{'text-orange': galleryFilter==='ui'}"
+                 @click="updateFilter('ui')">web design
             </div>
 
             <div class="text-uppercase pointer mx-2"
-                 :class="{'text-orange': galleryFilter==='nature'}"
-                 @click="updateFilter('nature')">digital marketing
+                 :class="{'text-orange': galleryFilter==='mkt'}"
+                 @click="updateFilter('mkt')">digital marketing
             </div>
 
-            <div class="text-uppercase pointer mx-2">UX Design</div>
+            <div class="text-uppercase pointer mx-2"
+                 :class="{'text-orange': galleryFilter==='ux'}"
+                 @click="updateFilter('ux')">UX Design
+            </div>
 
-            <div class="text-uppercase pointer mx-2">Web Development</div>
+            <div class="text-uppercase pointer mx-2"
+                 :class="{'text-orange': galleryFilter==='dev'}"
+                 @click="updateFilter('dev')">Web Development
+            </div>
 
-            <div class="text-uppercase pointer ml-2">Graphic Design</div>
+            <div class="text-uppercase pointer ml-2"
+                 :class="{'text-orange': galleryFilter==='gr'}"
+                 @click="updateFilter('gr')">Graphic Design
+            </div>
         </div>
 
         <transition-group name="thumbnailfade" tag="div">
@@ -55,45 +64,170 @@
         data () {
             return {
                 images       : [{
+                    'name'  : 'pm-home-lg.png',
+                    'alt'   : 'Pro Master Home Page',
+                    'filter': 'ui',
+                    'id'    : 'image1'
+                }, {
                     'name'  : 'pm-pricing-lg.png',
                     'alt'   : 'Pro Master Pricing Page LG',
-                    'filter': 'nature',
-                    'id'    : 'image1'
+                    'filter': 'ui',
+                    'id'    : 'image2'
+                }, {
+                    'name'  : 'pm-pricing-sm.png',
+                    'alt'   : 'Pro Master Pricing',
+                    'filter': 'ui',
+                    'id'    : 'image3'
+                }, {
+                    'name'  : 'pm-dash-lg.png',
+                    'alt'   : 'Pro Master Dashboard',
+                    'filter': 'ui',
+                    'id'    : 'image4'
+                }, {
+                    'name'  : 'pm-dash-sm.png',
+                    'alt'   : 'Pro Master Dashboard small',
+                    'filter': 'ui',
+                    'id'    : 'image5'
+                }, {
+                    'name'  : 'pm-contact-lg.png',
+                    'alt'   : 'Pro Master Contact',
+                    'filter': 'ui',
+                    'id'    : 'image6'
+                }, {
+                    'name'  : 'pm-albums-album.png',
+                    'alt'   : 'Pro Master Albums',
+                    'filter': 'ui',
+                    'id'    : 'image7'
+                }, {
+                    'name'  : 'pm-albums-tracks.png',
+                    'alt'   : 'Pro Master Tracks',
+                    'filter': 'ui',
+                    'id'    : 'image8'
+                }, {
+                    'name'  : 'Fusion-slick.png',
+                    'alt'   : 'RMS Fusion',
+                    'filter': 'mkt',
+                    'id'    : 'image9'
                 }, {
                     'name'  : 'amkor.png',
                     'alt'   : 'amkor',
+                    'filter': 'ui',
+                    'id'    : 'image10'
+                }, {
+                    'name'  : 'amkor-wireframe1.png',
+                    'alt'   : 'amkor wireframe',
+                    'filter': 'ux',
+                    'id'    : 'image11'
+                }, {
+                    'name'  : 'amkor-header-graphic-large.jpg',
+                    'alt'   : 'amkor header graphic specs',
+                    'filter': 'mkt',
+                    'id'    : 'image12'
+                }, {
+                    'name'  : 'c1-home.png',
+                    'alt'   : 'cell one home page',
+                    'filter': 'ux',
+                    'id'    : 'image13'
+                }, {
+                    'name'  : 'c1-hire.png',
+                    'alt'   : 'cell one hire',
+                    'filter': 'ux',
+                    'id'    : 'image14'
+                }, {
+                    'name'  : 'c1-file-manager.png',
+                    'alt'   : 'cell one file manager',
+                    'filter': 'ux',
+                    'id'    : 'image15'
+                }, {
+                    'name'  : 'c1-wiki.png',
+                    'alt'   : 'cell one wiki',
+                    'filter': 'ux',
+                    'id'    : 'image16'
+                }, {
+                    'name'  : 'precog-graph.png',
+                    'alt'   : 'precog graph',
+                    'filter': 'ui',
+                    'id'    : 'image17'
+                }, {
+                    'name'  : 'c1-wiki2.png',
+                    'alt'   : 'cell one wiki',
+                    'filter': 'ux',
+                    'id'    : 'image18'
+                }, {
+                    'name'  : 'melodex-tracks.png',
+                    'alt'   : 'melodex tracks',
+                    'filter': 'ux',
+                    'id'    : 'image19'
+                }, {
+                    'name'  : 'melodex-track.png',
+                    'alt'   : 'melodex track',
+                    'filter': 'ui',
+                    'id'    : 'image20'
+                }, {
+                    'name'  : 'melodex-outputs.png',
+                    'alt'   : 'melodex-outputs',
+                    'filter': 'ui',
+                    'id'    : 'image21'
+                }, {
+                    'name'  : 'melodex-output.png',
+                    'alt'   : 'melodex-output',
+                    'filter': 'ui',
+                    'id'    : 'image22'
+                }, {
+                    'name'  : 'melodex-track.png',
+                    'alt'   : 'melodex track',
+                    'filter': 'ui',
+                    'id'    : 'image23'
+                }, {
+                    'name'  : 'melodex-track.png',
+                    'alt'   : 'melodex track',
+                    'filter': 'ui',
+                    'id'    : 'image24'
+                }, {
+                    'name'  : 'melodex-track.png',
+                    'alt'   : 'melodex track',
+                    'filter': 'ui',
+                    'id'    : 'image25'
+                }, {
+                    'name'  : 'melodex-track.png',
+                    'alt'   : 'melodex track',
+                    'filter': 'ui',
+                    'id'    : 'image26'
+                }, {
+                    'name'  : 'melodex-track.png',
+                    'alt'   : 'melodex track',
+                    'filter': 'ui',
+                    'id'    : 'image27'
+                }, {
+                    'name'  : 'melodex-track.png',
+                    'alt'   : 'melodex track',
+                    'filter': 'ui',
+                    'id'    : 'image28'
+                }, {
+                    'name'  : 'melodex-track.png',
+                    'alt'   : 'melodex track',
+                    'filter': 'ui',
+                    'id'    : 'image29'
+                }, {
+                    'name'  : 'melodex-track.png',
+                    'alt'   : 'melodex track',
+                    'filter': 'ui',
+                    'id'    : 'image30'
+                }, {
+                    'name'  : 'melodex-track.png',
+                    'alt'   : 'melodex track',
+                    'filter': 'ui',
+                    'id'    : 'image31'
+                }, {
+                    'name'  : 'melodex-track.png',
+                    'alt'   : 'melodex track',
+                    'filter': 'ui',
+                    'id'    : 'image32'
+                }, {
+                    'name'  : 'melodex-outputs.png',
+                    'alt'   : 'amkor',
                     'filter': 'animals',
-                    'id'    : 'image2'
-                }, {
-                    'name'  : 'alps.jpg',
-                    'alt'   : 'I will live here someday',
-                    'filter': 'nature',
-                    'id'    : 'image3'
-                }, {
-                    'name'  : 'bear.jpg',
-                    'alt'   : 'Friendly bear',
-                    'filter': 'animals',
-                    'id'    : 'image4'
-                }, {
-                    'name'  : 'canyon.jpg',
-                    'alt'   : 'A worthy hike',
-                    'filter': 'nature',
-                    'id'    : 'image5'
-                }, {
-                    'name'  : 'monumentvalley.jpg',
-                    'alt'   : 'Monument Valley',
-                    'filter': 'nature',
-                    'id'    : 'image6'
-                }, {
-                    'name'  : 'puppy.jpg',
-                    'alt'   : 'Puppy with a feather',
-                    'filter': 'animals',
-                    'id'    : 'image7'
-                }, {
-                    'name'  : 'redwoods.jpg',
-                    'alt'   : 'Foggy evening in the Redwoods',
-                    'filter': 'nature',
-                    'id'    : 'image8'
+                    'id'    : 'image33'
                 }],
                 galleryFilter: 'all',
                 thumbnailDir : process.env.BASE_URL + 'portfolio/'
