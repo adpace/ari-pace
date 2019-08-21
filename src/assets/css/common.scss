@@ -124,6 +124,7 @@ body {
 a, a:not([href]):not([tabindex]) {
   color: white;
 }
+
 a:not([href]):not([tabindex]):hover {
   color: $orange
 }
@@ -140,6 +141,7 @@ a.link.active {
   -moz-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
+
   &:hover {
     color: white;
     text-decoration: none;

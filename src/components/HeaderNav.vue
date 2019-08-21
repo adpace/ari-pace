@@ -49,9 +49,9 @@
     @import '../assets/css/index.scss';
 
     #nav {
-& a {
-    font-size: 14px;
-}
+        & a {
+            font-size: 14px;
+        }
     }
 
     .header {
@@ -84,6 +84,7 @@
 
     .solid-bg .menu a.link:not(.active) {
         color: black;
+
         &:hover {
             color: $orange;
         }

@@ -16,7 +16,8 @@
                         </div>
                         <div class="row my-3">
                             <div class="col">
-                                <textarea class="form-control" name="message" id="contact-message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                                <textarea class="form-control" name="message" id="contact-message" cols="30" rows="10"
+                                          placeholder="Your Message"></textarea>
                             </div>
                         </div>
                         <div class="row mt-3">

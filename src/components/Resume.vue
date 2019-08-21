@@ -50,7 +50,8 @@
 
                             <h6 class="font-italic font-weight-light">2016</h6>
                             <h6 class="font-weight-semi-bold">Winner of JSVillage best web app competition</h6>
-                            <p>created the UI for Neighborhood Intelligence, the winning App that finished 3rd in the state to the group
+                            <p>created the UI for Neighborhood Intelligence, the winning App that finished 3rd in the
+                                state to the group
                                 that won worlds in Spain.</p>
                         </div>
                     </div>

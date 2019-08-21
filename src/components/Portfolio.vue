@@ -1,5 +1,5 @@
 <template>
-    <div class="section">
+    <div class="section pb-0fire">
         <div class="section-title">My Portfolio</div>
 
         <div class="d-flex justify-content-center font-md">
@@ -144,38 +144,38 @@
                     'filter': 'ux',
                     'id'    : 'image16'
                 }, {
-                    'name'  : 'precog-graph.png',
-                    'alt'   : 'precog graph',
-                    'filter': 'ui',
-                    'id'    : 'image17'
-                }, {
                     'name'  : 'c1-wiki2.png',
                     'alt'   : 'cell one wiki',
                     'filter': 'ux',
+                    'id'    : 'image17'
+                }, {
+                    'name'  : 'precog-low.png',
+                    'alt'   : 'precog-low',
+                    'filter': 'ui',
                     'id'    : 'image18'
                 }, {
-                    'name'  : 'melodex-tracks.png',
-                    'alt'   : 'melodex tracks',
-                    'filter': 'ux',
+                    'name'  : 'precog-med.png',
+                    'alt'   : 'precog med',
+                    'filter': 'ui',
                     'id'    : 'image19'
                 }, {
-                    'name'  : 'melodex-track.png',
-                    'alt'   : 'melodex track',
+                    'name'  : 'precog-high.png',
+                    'alt'   : 'precog-high',
                     'filter': 'ui',
                     'id'    : 'image20'
+                }, {
+                    'name'  : 'precog-graph.png',
+                    'alt'   : 'precog graph',
+                    'filter': 'ui',
+                    'id'    : 'image21'
                 }, {
                     'name'  : 'melodex-outputs.png',
                     'alt'   : 'melodex-outputs',
                     'filter': 'ui',
-                    'id'    : 'image21'
-                }, {
-                    'name'  : 'melodex-output.png',
-                    'alt'   : 'melodex-output',
-                    'filter': 'ui',
                     'id'    : 'image22'
                 }, {
-                    'name'  : 'melodex-track.png',
-                    'alt'   : 'melodex track',
+                    'name'  : 'melodex-tracks.png',
+                    'alt'   : 'melodex-tracks',
                     'filter': 'ui',
                     'id'    : 'image23'
                 }, {
@@ -184,50 +184,75 @@
                     'filter': 'ui',
                     'id'    : 'image24'
                 }, {
-                    'name'  : 'melodex-track.png',
+                    'name'  : 'melodex-trackset.png',
                     'alt'   : 'melodex track',
                     'filter': 'ui',
                     'id'    : 'image25'
                 }, {
-                    'name'  : 'melodex-track.png',
-                    'alt'   : 'melodex track',
+                    'name'  : 'melodex-output2.png',
+                    'alt'   : 'melodex output 2',
                     'filter': 'ui',
                     'id'    : 'image26'
                 }, {
-                    'name'  : 'melodex-track.png',
-                    'alt'   : 'melodex track',
-                    'filter': 'ui',
+                    'name'  : 'jessy-nelson-magazine-full-page.png',
+                    'alt'   : 'Magazine full page',
+                    'filter': 'mkt',
                     'id'    : 'image27'
                 }, {
-                    'name'  : 'melodex-track.png',
-                    'alt'   : 'melodex track',
-                    'filter': 'ui',
+                    'name'  : 'Instagram-2015-Golf.png',
+                    'alt'   : 'golf instagram ad',
+                    'filter': 'mkt',
                     'id'    : 'image28'
                 }, {
-                    'name'  : 'melodex-track.png',
-                    'alt'   : 'melodex track',
-                    'filter': 'ui',
+                    'name'  : 'Shop-AP-Designs-Ad-thumb.jpg',
+                    'alt'   : 'Shop-AP-Designs-Ad-thumb',
+                    'filter': 'mkt',
                     'id'    : 'image29'
                 }, {
-                    'name'  : 'melodex-track.png',
-                    'alt'   : 'melodex track',
-                    'filter': 'ui',
+                    'name'  : 'Facebook-Ad-thumb.jpg',
+                    'alt'   : 'Facebook-Ad-thumb.jpg',
+                    'filter': 'mkt',
                     'id'    : 'image30'
                 }, {
-                    'name'  : 'melodex-track.png',
-                    'alt'   : 'melodex track',
-                    'filter': 'ui',
+                    'name'  : 'golf-classic.jpg',
+                    'alt'   : 'golf-classic',
+                    'filter': 'mkt',
                     'id'    : 'image31'
                 }, {
-                    'name'  : 'melodex-track.png',
-                    'alt'   : 'melodex track',
-                    'filter': 'ui',
+                    'name'  : 'golf_r2r_brochure_12-front.jpg',
+                    'alt'   : 'golf_r2r_brochure_12-front.jpg',
+                    'filter': 'gr',
                     'id'    : 'image32'
                 }, {
-                    'name'  : 'melodex-outputs.png',
-                    'alt'   : 'amkor',
-                    'filter': 'animals',
+                    'name'  : 'golf_r2r_brochure_12-back.jpg',
+                    'alt'   : 'golf_r2r_brochure_12-back.jpg',
+                    'filter': 'gr',
                     'id'    : 'image33'
+                }, {
+                    'name'  : 'hart-invitational.png',
+                    'alt'   : 'hart-invitational.png',
+                    'filter': 'mkt',
+                    'id'    : 'image34'
+                }, {
+                    'name'  : 'Brush-Snap-Back-Cap-F.png',
+                    'alt'   : 'Brush-Snap-Back-Cap-F',
+                    'filter': 'gr',
+                    'id'    : 'image35'
+                }, {
+                    'name'  : 'Brush-Snap-Back-Cap-B.png',
+                    'alt'   : 'Brush-Snap-Back-Cap-B',
+                    'filter': 'gr',
+                    'id'    : 'image36'
+                }, {
+                    'name'  : 'golf_r2r_brochure_12-front.jpg',
+                    'alt'   : 'golf_r2r_brochure_12-front.jpg',
+                    'filter': 'gr',
+                    'id'    : 'image37'
+                }, {
+                    'name'  : 'MXDN-Rider-Number-Cards-front.gif',
+                    'alt'   : 'MXDN-Rider-Number-Cards-front.gif',
+                    'filter': 'gr',
+                    'id'    : 'image38'
                 }],
                 galleryFilter: 'all',
                 thumbnailDir : process.env.BASE_URL + 'portfolio/'
